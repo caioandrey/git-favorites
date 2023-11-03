@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff: 'Roboto', sans-serif;
+    --font-color: white;
+
+    --bg-buttonFAV-color: rgba(6, 94, 124, 1);
+    --bg-buttonFav-color-hover: rgb(3, 44, 58);
+
+    --bg-table-color: rgba(9, 45, 56, 1);
+    --bg-primary-color: rgba(6, 22, 27, 0.5);
+    --bg-secondary-color: rgba(6, 24, 28, 1);
+
+    --border-table-color: rgba(3, 105, 139, 0.959);
+
+    --remove-button-color: rgba(247, 90, 104, 1);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #000;
+}
+
+body * {
+    font-family: var(--ff);
+    color: var(--font-color);
+}
+
+#app {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 11.5rem 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    
+    gap: .8rem;
+}
+
+.search input {
+    width: 46rem;
+    height: auto;
+
+    border-style: none;
+    background-color: var(--bg-primary-color);
+    display: flex;
+    padding: 1.6rem;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: .5rem;
+}
+
+.search button {
+    border-style: none;
+    background-color: var(--bg-buttonFAV-color);
+
+    display: flex;
+    padding: 1.2rem 3.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border-radius: .5rem;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: var(--bg-buttonFav-color-hover);
+}
+
+.tableAdjust {
+    border: 4px solid hsl(191.05deg 18.45% 40.39%);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--font-color);
+}
+
+table th {
+    background-color: var(--bg-table-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.6rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--bg-secondary-color);
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--bg-primary-color);
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.notfav {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 21rem;
+    gap: 6rem;
+
+    display: block;
+}
+
+
+
+.notcontent {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+.remove {
+    color: var(--remove-button-color);
+    cursor: pointer;
+
+    background-color: none;
+    border-style: none;
+    background: none;
+    transition: transform 0.2s;
+}
+
+.remove:hover {
+    transform: scale(1.1);
+}
+
+
