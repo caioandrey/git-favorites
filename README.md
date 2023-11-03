@@ -21,7 +21,7 @@ este projeto foi desenvolvido para acompanhar nossos users favoritos do github.
 
 Atualizações de versão serão implementadas no futuro.
 </br>
-Link: 
+Link: https://git-favorites-omega.vercel.app/
 
 ## 🚀 Tecnologias
 
